@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2N1 Cafe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/2963617d5d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="hero">
+      <nav class="navbar">
+        <div class="logo"><img src="Images/Logo.png" alt=""></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="account-icon">
+            <a href="log_in.html"><i class="fas fa-user-circle"></i></a>
+        </div>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+      <div class="hero-content">
+        <h1>double joy, single cup.</h1>
+        <p>— where happiness brews!</p>
+      </div>
+      <div class="icon2">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+      </div>
+    </header>
+
+    <div id="about1">
+      <header>
+        <div class="text">
+        <h1>2N1 Cafe</h1>
+        <p>
+          Founded in 2023, our cafe was born from a passion for exceptional coffee and delectable desserts. 
+          We believe that every cup should tell a story, which is why we source our beans from sustainable farms 
+          and carefully craft each drink to perfection.
+        </p>
+      </div>
+      </header>
+  
+      <section class="content">
+        <div class="card1">
+          <img src="Images/Mission.png" alt="Mission Icon" class="icon">
+          <h2>MISSION</h2>
+          <p>
+            At 2N1 Cafe, our mission is to create a welcoming space that brings people together over exceptional coffee 
+            and delightful desserts, fostering community connections and memorable moments that can only be experienced 
+            in our humble space.
+          </p>
+        </div>
+        <div class="card2">
+          <img src="Images/Vision.png" alt="Vision Icon" class="icon">
+          <h2>VISION</h2>
+          <p>
+            We envision a cafe that serves as a beloved local hub, known for its commitment to quality, sustainability, 
+            flavor, service, and creating a warm atmosphere where everyone feels at home. We aim to be a place where connections are made over great coffee and lasting memories.
+          </p>
+        </div>
+        <div class="card3">
+          <img src="Images/Goal.png" alt="Goal Icon" class="icon">
+          <h2>GOAL</h2>
+          <p>
+            Our goal is to continuously enhance our service and product, ensuring every guest leaves satisfied and inspired, 
+            while supporting local farmers and reducing our environmental footprint. We also hope for our humble cafe to 
+            spread and provide the same quality service to other branches.
+          </p>
+        </div>
+      </section>
+      <div class="vector3">
+        <img src="Images/Vector3.png" alt="">
+      </div>
+      <div class="vector4">
+        <img src="Images/Vector4.png" alt="">
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navbar = document.querySelector(".navbar");
+      const aboutSection = document.getElementById("about1");
+  
+      window.addEventListener("scroll", () => {
+        const aboutSectionTop = aboutSection.offsetTop;
+        const scrollPosition = window.scrollY + window.innerHeight / 10;
+  
+        if (scrollPosition >= aboutSectionTop) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    });
+    
+      const hamburger = document.querySelector('.hamburger');
+      const navLinks = document.querySelector('.nav-links');
+
+
+      hamburger.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+      });
+
+  </script>
+  
+</html>

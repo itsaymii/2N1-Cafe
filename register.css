@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F3EEEA;
+    color: black;
+    font-weight: 400;
+    overflow: hidden;
+    user-select: none; 
+}
+
+#register{
+    padding: 10%;
+}
+
+.image{
+    margin-left: -13%;
+    margin-top: -15%;
+}
+
+.image img{
+    width: 55%;
+}
+
+.logo{
+    margin-left: 2.8%;
+    margin-top: -43.7%;
+}
+
+.logo img{
+    width: 27%;
+}
+
+.title{
+    margin-left: 75%;
+    margin-top: -30%;
+}
+
+.title h1{
+    font-size: 3vw;
+    font-family: inter;
+}
+
+.form-group {
+    margin-top: -50px;
+    margin-bottom: -100px;
+}
+
+.form-group label{
+    margin-left: 60%;
+}
+
+label[for="username"] {
+    font-family: inter;
+    font-size: 0.9rem;
+    position: absolute;
+    color: black;
+    margin-top: 6.8%;
+    margin-left: 54.5%;
+}
+
+
+label[for="password"] {
+    font-family: inter;
+    font-size: 0.9rem;
+    position: absolute;
+    color: black;
+    margin-top: 6.9%;
+    margin-left: 54.5%;
+}
+
+
+.form-group input {
+    width: 25%;
+    margin-left: 68%;
+    margin-top: 10%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    
+}
+
+.form-group a {
+    display: block;
+    text-align: right;
+    margin-right: 8%;
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.form-group a:hover {
+    text-decoration: underline;
+}
+
+.form-button {
+    display: block;
+    width: 25%;
+    margin-left: 68%;
+    margin-top: 10%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.form-button:hover {
+    background: #444;
+}
+
+.line-container {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 60%;
+    font-family: inter;
+  }
+  
+  .line {
+    border-top: 2px solid black; 
+    display: inline-block;
+    width: 100px; 
+  }
+  
+  .or {
+    padding: 0 10px; 
+  }
+
+.socmed{
+    margin-left: 77%;
+}
+
+.socmed img{
+    width: 13%;
+}
+
+.not{
+    margin-left: 75%;
+    margin-top: 2%;
+    font-family: inter;
+    font-size: 0.8rem;
+}
+
+.not a{
+    position: absolute;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 9%;
+    margin-top: -0.7%;
+}

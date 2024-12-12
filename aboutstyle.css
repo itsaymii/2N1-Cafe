@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F3EEEA;
+    color: black;
+    font-weight: 400;
+    overflow-x: hidden;
+    user-select: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  background-color: #fcf9f7;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+  width: 290px;
+  font-weight: bold;
+  margin-right: auto; 
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 900px; 
+}
+
+.nav-links li {
+  margin: 0 15px;
+  margin-top: 1%;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: inter;
+  font-weight: 600;
+  color: black;
+  font-size: 1em;
+  margin: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  width: 0;
+  height: 3px; 
+  background-color: #DAA06D; 
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%; 
+}
+
+.account-icon {
+  margin-left: 10px; 
+  margin-top: 0.5%;
+}
+.account-icon i{
+  margin-right: 60px;
+}
+.account-icon a {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+#about{
+    padding: 25%;
+    padding-bottom: 15%;
+}
+
+.image1{
+    position: absolute;
+    margin-left: 35%;
+    margin-top:-10%;
+    -webkit-user-drag: none;
+}
+
+.image2{
+    position: relative;
+    margin-top: -5%;
+    margin-left: 55%;
+    -webkit-user-drag: none;
+}
+
+.about-text h1{
+    position: relative;
+    color: #C9976A;
+    font-size: 40px;
+    margin-top: -42%;
+    margin-left: -25%;
+}
+
+.about-text h2{
+    color: black;
+    font-size: 55px;
+    margin-left: -25%;
+}
+
+.about-text p{
+    color: black;
+    font-size: 20px;
+    margin-top: 1%;
+    margin-left: -25%;
+}
+
+.button2 a{
+    width: 10%;
+    font-family: inter;
+    font-size: 16px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background: black;
+    border-radius: 20px;
+    padding: 10px 35px;
+    margin-left: -13%;
+    margin-top: 1%;
+}
+
+.button2 a:hover{
+    background-position: 0 100%;
+    background-color: #C9976A;
+    transition: 0.5s;
+}
+
+.vector2 img{
+    position: absolute;
+    margin-left: 38%;
+    top: 71.5%;
+    -webkit-user-drag: none;
+}
+
+.vector3 img{
+    position: absolute;
+    margin-left: -25%;
+    top: 77.5%;
+    -webkit-user-drag: none;
+}
+

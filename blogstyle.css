@@ -1,0 +1,298 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #DAA06D;
+  color: black;
+  font-weight: 400;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  width: 100%;
+  top: 0;
+  background-color: #fcf9f7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  width: 290px;
+  font-weight: bold;
+  margin-right: auto;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin-left: 900px;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-family: inter;
+  font-weight: 600;
+  color: black;
+  font-size: 1em;
+  margin: 15px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background-color: #DAA06D;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.account-icon {
+  margin-left: 10px;
+}
+
+.account-icon i {
+  margin-right: 60px;
+}
+
+.account-icon a {
+  text-decoration: none;
+  font-size: 2em;
+  color: black;
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+#blog {
+  padding: 40%;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url(Images/BLOGS.png);
+  background-repeat: no-repeat;
+  height: 400px;
+  margin-top: 4.3%;
+}
+
+.hero-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  position: relative;
+  font-size: 60px;
+  margin: -100%;
+  margin-top: -20%;
+  line-height: 1.2;
+  font-weight: bold;
+  text-align: center;
+  color: whitesmoke;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -1%;
+  flex-wrap: wrap; 
+  gap: 20px; 
+}
+
+.card {
+  width: 20%;
+  background-color: #fff;
+  padding: 40px;
+  width: 300px;
+  height: 450px;
+  text-align: center;
+  margin-top: 5%;
+  border-radius: 7px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  text-align: left;
+}
+
+.card p {
+  margin: 10px 0;
+  text-align: left;
+  color: gray;
+}
+
+.card a {
+  margin-left: -75%;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .nav-links {
+      margin-left: 0;
+  }
+
+  .card-container {
+      justify-content: space-between;
+  }
+
+  .card {
+      width: 30%;
+  }
+}
+
+
+@media screen and (max-width: 900px) {
+  .nav-links {
+      display: none;
+  }
+
+  .hamburger {
+      display: block;
+  }
+
+  .card-container {
+      justify-content: space-between;
+      flex-direction: column;
+  }
+
+  .card {
+      width: 80%;
+      margin: 10px auto;
+  }
+  h3{
+    margin-top: 2%;
+  }
+
+  .hero-section {
+      height: 300px;
+  }
+
+  .hero-content h1 {
+      font-size: 36px;
+      margin-top: 0;
+  }
+  .card-container img{
+    height: 50%;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  
+  .navbar {
+      padding: 8px;
+  }
+
+  .nav-links {
+      width: 100%;
+      padding: 10px;
+  }
+
+  .nav-links a {
+      font-size: 12px; 
+      padding: 6px;
+      text-align: left;
+      width: 100%;
+      display: block;
+      
+  }
+  .account-icon a{
+    font-size: 15px;
+  }
+
+  
+
+  
+  .hero-section {
+      height: 220px; 
+      background-size: cover; 
+      background-position: center;
+      width: 45vh;
+  }
+
+  .hero-content h1 {
+      font-size: 24px; 
+      margin-top: 20px;
+      margin-bottom: 0;
+  }
+
+  .card-container {
+      padding: 5px; 
+      flex-direction: column;
+      align-items: center;
+      gap: 5px; 
+  }
+
+  .card {
+      width: 95%; 
+      height: auto;
+      padding: 15px; 
+      margin-top: 10px;
+      margin-bottom: 15px;
+  }
+
+  .card img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+  }
+
+  .card h3 {
+      font-size: 16px; 
+      text-align: left;
+  }
+
+  .card p {
+      font-size: 12px; 
+  }
+
+  .card a {
+      font-size: 12px; 
+
+ 
+  .account-icon {
+      margin-top: 10px;
+  }
+
+  .account-icon i {
+      font-size: 2em; 
+  }
+}
+}

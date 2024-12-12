@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="productstyle.css">
+        <script src="https://kit.fontawesome.com/2963617d5d.js" crossorigin="anonymous"></script>
+        <title>Products</title>
+    </head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="Images/Logo2.png" alt=""></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blogs.html">Blog</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="account-icon">
+                <a href="log_in.html"><i class="fas fa-user-circle"></i></a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="menu">
+            <div class="text">
+                <h2>MENU</h2>
+                <p>Enjoy our crafted coffees and delicious treats. Sip and savor!</p>
+            </div>
+        <div class="menu-box">
+                <div class="menu-section1">
+                    <h3>Iced Coffee</h3>
+                    <img src="Images/product1.png" alt="Iced Coffee">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Salted Caramel</td>
+                                <td>39</td>
+                                <td>49</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>Spanish Latte</td>
+                                <td>39</td>
+                                <td>49</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>Caramel Macchiato</td>
+                                <td>39</td>
+                                <td>49</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>French Vanilla</td>
+                                <td>39</td>
+                                <td>49</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>White Chocolate</td>
+                                <td>39</td>
+                                <td>49</td>
+                                <td>69</td>
+                            </tr>
+                            <tr>
+                                <td>Cafe Mocha</td>
+                                <td>39</td>
+                                <td>49</td>
+                                <td>69</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="menu-section2">
+                    <h3>Cold Drinks</h3>
+                    <img src="Images/product2.png" alt="Cold Drinks">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>S</th>
+                                <th>M</th>
+                                <th>L</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Salted Caramel</td>
+                                <td>49</td>
+                                <td>59</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Strawberry</td>
+                                <td>49</td>
+                                <td>59</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Caramel Macchiato</td>
+                                <td>49</td>
+                                <td>59</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Chocolate</td>
+                                <td>49</td>
+                                <td>59</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Matcha Berry</td>
+                                <td>49</td>
+                                <td>59</td>
+                                <td>89</td>
+                            </tr>
+                            <tr>
+                                <td>Choco Berry</td>
+                                <td>49</td>
+                                <td>59</td>
+                                <td>89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="menu-section3">
+                    <h3>Waffles</h3>
+                    <img src="Images/product3.png" alt="Waffles">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Nutella</td>
+                                <td>120</td>
+
+                            </tr>
+                            <tr>
+                                <td>Biscof</td>
+                                <td>120</td>
+
+                            </tr>
+                            <tr>
+                                <td>Mallow Graham</td>
+                                <td>120</td>
+
+                            </tr>
+                            <tr>
+                                <td>Nutella Alcapone</td>
+                                <td>120</td>
+
+                            </tr>
+                            <tr>
+                                <td>Choco Alcapone</td>
+                                <td>120</td>
+
+                            </tr>
+                            <tr>
+                                <td>Chocolate</td>
+                                <td>120</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+    </script>
+</body>
+</html>
